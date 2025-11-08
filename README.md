@@ -1,4 +1,4 @@
-# <img src="assets/icon.svg" alt="Ouo Auto-Clicker icon" width="24" height="24"> Ouo Auto-Clicker
+# <img src="assets/icon.svg" alt="Ouo Auto-Clicker icon" width="28" height="28"> Ouo Auto-Clicker
 
 *Automatically clicks verification buttons and submits forms on ouo.io and ouo.press to speed up redirects.*
 
