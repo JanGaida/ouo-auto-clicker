@@ -1,13 +1,9 @@
 // ==UserScript==
 // @name         Ouo Auto-Clicker
 // @description  Automatically clicks verification and submit buttons on ouo.io and ouo.press to skip manual interaction.
-// @version      1.0
+// @version      1.1
 // @author       Jan Gaida
 // @license      GPLv3
-// @namespace    https://github.com/JanGaida/ouo-auto-clicker
-// @supportURL   https://github.com/JanGaida/ouo-auto-clicker/issues
-// @updateURL    https://raw.githubusercontent.com/JanGaida/ouo-auto-clicker/main/ouo-auto-clicker.user
-// @downloadURL  https://raw.githubusercontent.com/JanGaida/ouo-auto-clicker/main/ouo-auto-clicker.user
 // @match        *://*.ouo.io/*
 // @exclude      *://*.ouo.io
 // @exclude      *://*.ouo.io/auth
@@ -18,7 +14,11 @@
 // @exclude      *://*.ouo.press/auth/*
 // @grant        none
 // @run-at       document-body
-// @icon         data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB2aWV3Qm94PSItNS44IC01LjggMzEuNjAgMzEuNjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgZmlsbD0iIzE1MTUxNSIgc3Ryb2tlPSIjMTUxNTE1IiB0cmFuc2Zvcm09InJvdGF0ZSgwKW1hdHJpeCgxLCAwLCAwLCAxLCAwLCAwKSI+PGcgaWQ9IlNWR1JlcG9fYmdDYXJyaWVyIiBzdHJva2Utd2lkdGg9IjAiPjxwYXRoIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01LjgsIC01LjgpLCBzY2FsZSgxLjk3NSkiIGZpbGw9IiNmZmZmZmYiIGQ9Ik05LjE2Ni4zM2EyLjI1IDIuMjUgMCAwMC0yLjMzMiAwbC01LjI1IDMuMTgyQTIuMjUgMi4yNSAwIDAwLjUgNS40MzZ2NS4xMjhhMi4yNSAyLjI1IDAgMDAxLjA4NCAxLjkyNGw1LjI1IDMuMTgyYTIuMjUgMi4yNSAwIDAwMi4zMzIgMGw1LjI1LTMuMTgyYTIuMjUgMi4yNSAwIDAwMS4wODQtMS45MjRWNS40MzZhMi4yNSAyLjI1IDAgMDAtMS4wODQtMS45MjRMOS4xNjYuMzN6IiBzdHJva2V3aWR0aD0iMCI+PC9wYXRoPjwvZz48ZyBpZD0iU1ZHUmVwb190cmFjZXJDYXJyaWVyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvZz48ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDx0aXRsZT5jbGljayBbIzgxMF08L3RpdGxlPiA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gPGRlZnM+IDwvZGVmcz4gPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlLXdpZHRoPSIwLjAwMDIiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+IDxnIGlkPSJEcmliYmJsZS1MaWdodC1QcmV2aWV3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjAuMDAwMDAwLCAtNDU5OS4wMDAwMDApIiBmaWxsPSIjMTUxNTE1Ij4gPGcgaWQ9Imljb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni4wMDAwMDAsIDE2MC4wMDAwMDApIj4gPHBhdGggZD0iTTE0LDQ0NDcgQzEyLjg5NSw0NDQ3IDEyLDQ0NDggMTIsNDQ0OSBDMTIsNDQ0OS4yMzEgMTIuMDU4LDQ0NDkuNDYxIDEyLjE1Myw0NDQ5LjY4IEw0LjM2Miw0NDUyLjU0NSBMNi42ODQsNDQ1NC44NjggTDQsNDQ1Ny41NTIgTDUuNDQ4LDQ0NTkgTDguMTMyLDQ0NTYuMzE2IEwxMC40NTUsNDQ1OC42MzggTDEzLjMyLDQ0NTAuODQ3IEMxMy41MzksNDQ1MC45NDIgMTMuNzY5LDQ0NTEgMTQsNDQ1MSBDMTUuMTA1LDQ0NTEgMTYsNDQ1MCAxNiw0NDQ5IEMxNiw0NDQ3Ljg5NSAxNS4xMDUsNDQ0NyAxNCw0NDQ3IE0xNCw0NDQzIEwxNCw0NDQ1IEMxNi4yMDYsNDQ0NSAxOCw0NDQ2Ljc5NCAxOCw0NDQ5IEwyMCw0NDQ5IEMyMCw0NDQ1LjY4NiAxNy4zMTQsNDQ0MyAxNCw0NDQzIE0yNCw0NDQ5IEwyMiw0NDQ5IEMyMiw0NDQ0LjU4OSAxOC40MTEsNDQ0MSAxNCw0NDQxIEwxNCw0NDM5IEMxOS41MjMsNDQzOSAyNCw0NDQzLjQ3NyAyNCw0NDQ5IiBpZD0iY2xpY2stWyM4MTBdIj4gPC9wYXRoPiA8L2c+IDwvZz4gPC9nPiA8L2c+PC9zdmc+
+// @icon         https://cdn.jsdelivr.net/gh/JanGaida/ouo-auto-clicker@main/assets/icon.svg
+// @namespace    https://github.com/JanGaida/ouo-auto-clicker
+// @supportURL   https://github.com/JanGaida/ouo-auto-clicker/issues
+// @downloadURL  https://update.greasyfork.org/scripts/555191/Ouo%20Auto-Clicker.user.js
+// @updateURL    https://update.greasyfork.org/scripts/555191/Ouo%20Auto-Clicker.meta.js
 // ==/UserScript==
 
 (function() {
