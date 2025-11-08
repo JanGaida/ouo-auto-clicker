@@ -17,7 +17,7 @@ You must have a userscript manager already installed in your browser, such as **
 
 
 ### Install:
-Click the **[install link](https://greasyfork.org/scripts/555191-ouo-auto-clicker/code/Ouo%20Auto-Clicker.user.js)** to install the script via your userscript manager, or visit the **[GreasyFork page](https://greasyfork.org/en/scripts/555191-ouo-auto-clicker)** for more info..
+Click the **[install link](https://greasyfork.org/scripts/555191-ouo-auto-clicker/code/Ouo%20Auto-Clicker.user.js)** to install the script via your userscript manager, or visit the **[GreasyFork page](https://greasyfork.org/en/scripts/555191-ouo-auto-clicker)** for more info.
 
 
 ## ⚖️ License
