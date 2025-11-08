@@ -6,6 +6,7 @@
     ],
 
     "settings": {
+        "peacock.color": "#2F4F4F",
         "workbench.colorCustomizations": {
             "activityBar.activeBackground": "#426f6f",
             "activityBar.background": "#426f6f",
@@ -25,7 +26,6 @@
             "titleBar.activeForeground": "#e7e7e7",
             "titleBar.inactiveBackground": "#2f4f4f99",
             "titleBar.inactiveForeground": "#e7e7e799"
-        },
-        "peacock.color": "#2F4F4F"
+        }
     }
 }
