@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="-5.8 -5.8 31.60 31.60" version="1.1" fill="#151515" stroke="#151515" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)">
+   <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <path transform="translate(-5.8, -5.8), scale(1.975)" fill="#ffffff" d="M9.166.33a2.25 2.25 0 00-2.332 0l-5.25 3.182A2.25 2.25 0 00.5 5.436v5.128a2.25 2.25 0 001.084 1.924l5.25 3.182a2.25 2.25 0 002.332 0l5.25-3.182a2.25 2.25 0 001.084-1.924V5.436a2.25 2.25 0 00-1.084-1.924L9.166.33z" strokewidth="0" />
+   </g>
+   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+   <g id="SVGRepo_iconCarrier">
+      <defs />
+      <g id="Page-1" stroke-width="0.0002" fill="none" fill-rule="evenodd">
+         <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -4599.000000)" fill="#151515">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+               <path d="M14,4447 C12.895,4447 12,4448 12,4449 C12,4449.231 12.058,4449.461 12.153,4449.68 L4.362,4452.545 L6.684,4454.868 L4,4457.552 L5.448,4459 L8.132,4456.316 L10.455,4458.638 L13.32,4450.847 C13.539,4450.942 13.769,4451 14,4451 C15.105,4451 16,4450 16,4449 C16,4447.895 15.105,4447 14,4447 M14,4443 L14,4445 C16.206,4445 18,4446.794 18,4449 L20,4449 C20,4445.686 17.314,4443 14,4443 M24,4449 L22,4449 C22,4444.589 18.411,4441 14,4441 L14,4439 C19.523,4439 24,4443.477 24,4449" id="click-[#810]" />
+            </g>
+         </g>
+      </g>
+   </g>
+</svg>
